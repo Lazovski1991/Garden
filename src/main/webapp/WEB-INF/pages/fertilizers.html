@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="fragments/header :: head"></th:block>
+</head>
+<body>
+<table class="table table-hover text-center">
+    <tr>
+        <th>No</th>
+        <th>Удобрения</th>
+        <th>Когда вносить</th>
+        <th>Статус</th>
+        <th>Редактировать</th>
+        <th>Удалить</th>
+    </tr>
+
+    <tr th:each="fertilizer, state :${fertilizers}">
+        <td th:utext="${state.count}">No</td>
+        <td th:utext="${fertilizer.name}">Удобрения</td>
+        <td th:utext="${fertilizer.localDate}">Время внесения</td>
+        <td><a th:href="@{/fertilizers/over(id=${fertilizer.id})}">Я это сделал)</a></td>
+        <td><a th:href="@{/fertilizers/update(id=${fertilizer.id})}">Update</a></td>
+        <td><a th:href="@{/fertilizers/delete(id=${fertilizer.id})}">Delete</a></td>
+    </tr>
+</table>
+<br>
+<a href="/fertilizers/add">Добавить удобрение</a>
+</body>
+</html>
