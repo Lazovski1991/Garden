@@ -11,7 +11,7 @@ import java.util.List;
 
 public interface FertilizerRepository extends JpaRepository<Fertilizer, Integer> {
     @Modifying
-    @Query("SELECT m FROM fertilizer m WHERE m.user.id=:userId ORDER BY m.localDate DESC")
+    @Query("SELECT m FROM fertilizer m WHERE m.user.id=:userId ORDER BY m.localDate")
     List<Fertilizer> findAll(@Param("userId") int userId);
 
 }
