@@ -56,6 +56,9 @@
           <element id="library" level="project" name="Maven: org.webjars:jquery:3.5.1" />
           <element id="library" level="project" name="Maven: org.webjars:bootstrap:4.5.3" />
           <element id="library" level="project" name="Maven: org.webjars:datatables:1.10.21" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:5.4.2" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:5.4.2" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:5.4.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">

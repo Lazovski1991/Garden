@@ -23,8 +23,14 @@ public class ControllerExample {
 
     @GetMapping
     public String getPage(Model model) {
-        model.addAttribute("fertilizers", fertilizerService.getAll(1));
+        model.addAttribute("fertilizers", fertilizerService.findStatusFalse(1));
         return "fertilizers";
+    }
+
+    @GetMapping("/overs")
+    public String getPageOver(Model model) {
+        model.addAttribute("fertilizers", fertilizerService.findStatusTrue(1));
+        return "fertilizersOver";
     }
 
     @GetMapping("/add")
@@ -57,8 +63,14 @@ public class ControllerExample {
         return "redirect:/fertilizers";
     }
 
+    @GetMapping("/deleteAllTrue")
+    public String deleteAllTrue() {
+        fertilizerService.removeTrueAll(1);
+        return "redirect:/fertilizers/overs";
+    }
+
     @GetMapping("/over")
-    public String over(Model model, @RequestParam("id") Integer fertilizerId) {
+    public String over(@RequestParam("id") Integer fertilizerId) {
         fertilizerService.over(fertilizerId);
         return "redirect:/fertilizers";
     }

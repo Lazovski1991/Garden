@@ -2,6 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <th:block th:include="fragments/header :: head"></th:block>
 <body>
+<header th:insert="~{fragments/header :: bodyHeader1}"></header>
 <form class="text-center" method="post"  action="/fertilizers">
     <input type="hidden" name="id" th:field="*{fertilizer.id}">
     <dl>

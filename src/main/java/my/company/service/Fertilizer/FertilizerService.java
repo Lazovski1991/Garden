@@ -14,4 +14,10 @@ public interface FertilizerService {
     void delete(Integer fertilizerId);
 
     void over(Integer fertilizerId);
+
+    List<Fertilizer> findStatusFalse(Integer userId);
+
+    List<Fertilizer> findStatusTrue(Integer userId);
+
+    void removeTrueAll(Integer userId);
 }

@@ -10,10 +10,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="137e3941-29b4-4a75-81e4-c8b35813b890" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/company/controllers/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/company/service/User/UserDetImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-security.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/fertilizersOver.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/signin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/garden_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/garden_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/garden.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/garden.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/company/controllers/ControllerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/company/controllers/ControllerExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/company/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/company/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/company/repository/FertilizerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/company/repository/FertilizerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/company/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/company/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/company/service/Fertilizer/FertilizerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/company/service/Fertilizer/FertilizerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/company/service/Fertilizer/FertilizerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/company/service/Fertilizer/FertilizerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/populateDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/populateDB.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/fertilizerForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/fertilizerForm.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/fertilizers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/fertilizers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/pages/fertilizers.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/pages/fertilizers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/fragments/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/populateDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/populateDB.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/my/company/controllers/ControllerExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/company/controllers/ControllerExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/my/company/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/company/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/my/company/repository/FertilizerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/company/repository/FertilizerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/my/company/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/company/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/my/company/service/Fertilizer/FertilizerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/company/service/Fertilizer/FertilizerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/my/company/service/Fertilizer/FertilizerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/company/service/Fertilizer/FertilizerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/classes/db/populateDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/classes/db/populateDB.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/controllers/ControllerExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/controllers/ControllerExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/repository/FertilizerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/repository/FertilizerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/service/Fertilizer/FertilizerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/service/Fertilizer/FertilizerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/service/Fertilizer/FertilizerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/service/Fertilizer/FertilizerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +59,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="spring-beans.schema" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -64,7 +100,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JM/JmPreproject_3.3.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../InternShip/topjava" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -75,11 +111,19 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="my.company" />
@@ -192,6 +236,8 @@
       <workItem from="1612278490018" duration="6735000" />
       <workItem from="1612295392656" duration="2497000" />
       <workItem from="1612298602291" duration="8452000" />
+      <workItem from="1612357819845" duration="23196000" />
+      <workItem from="1612384370137" duration="4737000" />
     </task>
     <servers />
   </component>
@@ -216,5 +262,9 @@
         <watch expression="oldFertilizer" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

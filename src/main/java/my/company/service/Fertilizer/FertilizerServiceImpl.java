@@ -6,6 +6,7 @@ import my.company.service.User.UserService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 
@@ -29,6 +30,24 @@ public class FertilizerServiceImpl implements FertilizerService {
         return fertilizerRepository.findAll(userId);
     }
 
+    @Transactional(readOnly = true)
+    @Override
+    public List<Fertilizer> findStatusFalse(Integer userId) {
+        return fertilizerRepository.findStatusFalse(userId);
+    }
+
+    @Transactional(readOnly = true)
+    @Override
+    public List<Fertilizer> findStatusTrue(Integer userId) {
+        return fertilizerRepository.findStatusTrue(userId);
+    }
+
+    @Transactional
+    @Override
+    public void removeTrueAll(Integer userId) {
+        fertilizerRepository.removeTrueAll(userId);
+    }
+
     @Transactional
     @Override
     public void save(Fertilizer fertilizer, Integer userId) {
@@ -36,12 +55,12 @@ public class FertilizerServiceImpl implements FertilizerService {
             Fertilizer oldFertilizer = getId(fertilizer.getId());
             oldFertilizer.setLocalDate(fertilizer.getLocalDate());
             oldFertilizer.setName(fertilizer.getName());
+            oldFertilizer.setStatus(fertilizer.isStatus());
             fertilizerRepository.save(oldFertilizer);
         } else {
             fertilizer.setUser(userService.getUserId(userId));
             fertilizerRepository.save(fertilizer);
         }
-
     }
 
     @Transactional(readOnly = true)
@@ -61,15 +80,19 @@ public class FertilizerServiceImpl implements FertilizerService {
     public void over(Integer fertilizerId) {
         Fertilizer oldFertilizer = getId(fertilizerId);
         Fertilizer newFertilizer = new Fertilizer();
+        LocalDate now = LocalDate.now();
         newFertilizer.setName(oldFertilizer.getName());
         newFertilizer.setUser(oldFertilizer.getUser());
         newFertilizer.setStatus(false);
+        oldFertilizer.setStatus(true);
+        oldFertilizer.setLocalDate(now);
         for (Map.Entry<String, Integer> pair : map.entrySet()) {
             if (pair.getKey().equals(oldFertilizer.getName())) {
-                newFertilizer.setLocalDate(oldFertilizer.getLocalDate().plusDays(pair.getValue()));
+                newFertilizer.setLocalDate(now.plusDays(pair.getValue()));
             }
         }
-        fertilizerRepository.deleteById(fertilizerId);
-        fertilizerRepository.save(newFertilizer);
+        Integer userId = oldFertilizer.getUser().getId();
+        save(oldFertilizer, userId);
+        save(newFertilizer, userId);
     }
 }
