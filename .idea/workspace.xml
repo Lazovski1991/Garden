@@ -10,45 +10,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="137e3941-29b4-4a75-81e4-c8b35813b890" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/company/controllers/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/company/service/User/UserDetImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-security.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/fertilizersOver.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/signin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/company/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/company/service/MailSend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mail.ru.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/fertilizerTime.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/garden_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/garden_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/garden.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/garden.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/company/controllers/ControllerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/company/controllers/ControllerExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/company/controllers/ControllerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/company/controllers/FertilizerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/company/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/company/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/company/repository/FertilizerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/company/repository/FertilizerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/company/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/company/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/company/service/Fertilizer/FertilizerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/company/service/Fertilizer/FertilizerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/company/service/Fertilizer/FertilizerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/company/service/Fertilizer/FertilizerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/populateDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/populateDB.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/fertilizerForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/fertilizerForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/fertilizers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/fertilizers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/company/service/User/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/company/service/User/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/company/service/User/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/company/service/User/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-app.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-app.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-db.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-db.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-security.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/fragments/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/populateDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/populateDB.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/company/controllers/ControllerExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/company/controllers/ControllerExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/my/company/controllers/ControllerExample.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/my/company/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/company/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/company/repository/FertilizerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/company/repository/FertilizerRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/company/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/company/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/company/service/Fertilizer/FertilizerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/company/service/Fertilizer/FertilizerService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/my/company/service/Fertilizer/FertilizerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/company/service/Fertilizer/FertilizerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/classes/db/populateDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/classes/db/populateDB.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/controllers/ControllerExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/controllers/ControllerExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/my/company/service/User/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/company/service/User/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/my/company/service/User/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/company/service/User/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-app.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-app.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-db.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-db.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-security.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/controllers/ControllerExample.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/repository/FertilizerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/repository/FertilizerRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/service/Fertilizer/FertilizerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/service/Fertilizer/FertilizerService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/service/Fertilizer/FertilizerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/service/Fertilizer/FertilizerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/service/User/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/service/User/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/service/User/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/classes/my/company/service/User/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/classes/spring/spring-app.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/classes/spring/spring-app.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/classes/spring/spring-db.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/classes/spring/spring-db.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/classes/spring/spring-security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/classes/spring/spring-security.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/pages/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/pages/fragments/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/garden/WEB-INF/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/garden/WEB-INF/pages/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +59,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="HTML File" />
         <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -100,7 +100,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../InternShip/topjava" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bot-weather" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -109,8 +109,8 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
@@ -133,6 +133,17 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.41" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.41" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
@@ -222,6 +233,9 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringGeneralSettings">
+    <option name="allowAutoConfigurationMode" value="true" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="137e3941-29b4-4a75-81e4-c8b35813b890" name="Default Changelist" comment="" />
@@ -238,6 +252,8 @@
       <workItem from="1612298602291" duration="8452000" />
       <workItem from="1612357819845" duration="23196000" />
       <workItem from="1612384370137" duration="4737000" />
+      <workItem from="1612461888873" duration="120000" />
+      <workItem from="1612462099040" duration="16797000" />
     </task>
     <servers />
   </component>

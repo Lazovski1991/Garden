@@ -10,15 +10,35 @@
     <beans:bean class="org.springframework.security.crypto.password.NoOpPasswordEncoder" id="passwordEncoder" factory-method="getInstance"/>
 
     <http auto-config="true">
-        <intercept-url pattern="/**" access="isAuthenticated()"/>
+        <intercept-url pattern="/login" access="permitAll()"/>
+        <intercept-url pattern="/users/*" access="isAnonymous()"/>
+        <intercept-url pattern="/resources/css/**" access="permitAll"/>
 
-        <form-login default-target-url="/fertilizers"
-                    always-use-default-target="true"
-                    authentication-failure-url="/login?error"
-                    username-parameter="name"
-                    password-parameter="password"/>
+        <intercept-url pattern="/fertilizers" access="isAuthenticated()"/>
+
+
+        <form-login
+                login-page="/login"
+                authentication-failure-url="/login_error.html"
+                default-target-url="/fertilizers"
+                always-use-default-target="true"
+                username-parameter="j_username"
+                 password-parameter="j_password"/>
         <csrf disabled="true"/>
     </http>
+
+
+    <!-- <http auto-config="true">
+         <intercept-url pattern="/users/add" access="isAnonymous()"/>
+         <intercept-url pattern="/**" access="isAuthenticated()"/>
+
+         <form-login default-target-url="/fertilizers"
+                     always-use-default-target="true"
+                     authentication-failure-url="/login?error"
+                     username-parameter="name"
+                     password-parameter="password"/>
+         <csrf disabled="true"/>
+     </http>-->
     <authentication-manager>
         <authentication-provider user-service-ref="userDet">
             <password-encoder ref="passwordEncoder"/>

@@ -27,7 +27,7 @@ public class User implements UserDetails {
     private String password;
 
     @Column(name = "registered")
-    private Date date;
+    private LocalDateTime date;
 
     @Column(name = "enabled")
     private boolean enabled = true;
@@ -44,6 +44,14 @@ public class User implements UserDetails {
     private List<Fertilizer> fertilizers;
 
     public User() {
+    }
+
+    public User(String name, String email, String password, LocalDateTime date, boolean enabled) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.date = date;
+        this.enabled = enabled;
     }
 
     public Integer getId() {
@@ -92,7 +100,7 @@ public class User implements UserDetails {
 
     @Override
     public boolean isAccountNonLocked() {
-        return true;
+        return enabled;
     }
 
     @Override
@@ -104,11 +112,11 @@ public class User implements UserDetails {
         this.password = password;
     }
 
-    public Date getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 

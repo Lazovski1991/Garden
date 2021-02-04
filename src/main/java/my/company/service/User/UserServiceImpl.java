@@ -27,4 +27,10 @@ public class UserServiceImpl implements UserService{
     public User getUserId(Integer userId) {
         return userRepository.findById(userId).orElseThrow();
     }
+
+    @Transactional
+    @Override
+    public void add(User user) {
+        userRepository.save(user);
+    }
 }

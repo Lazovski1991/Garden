@@ -2,11 +2,16 @@ package my.company.service.Fertilizer;
 
 import my.company.entity.Fertilizer;
 import my.company.repository.FertilizerRepository;
+import my.company.service.MailSend;
 import my.company.service.User.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -14,6 +19,8 @@ import java.util.Map;
 public class FertilizerServiceImpl implements FertilizerService {
     public static Map<String, Integer> map = Map.of("синие", 14, "красные", 7, "зеленые", 21);
 
+    @Autowired
+    private MailSend mailSend;
 
     private final FertilizerRepository fertilizerRepository;
     private final UserService userService;
@@ -73,6 +80,7 @@ public class FertilizerServiceImpl implements FertilizerService {
     @Override
     public void delete(Integer fertilizerId) {
         fertilizerRepository.deleteById(fertilizerId);
+        mailSend.sendMailMessage();
     }
 
     @Transactional

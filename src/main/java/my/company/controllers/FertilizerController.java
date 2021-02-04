@@ -10,14 +10,15 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
+import java.util.HashMap;
 import java.util.Set;
 
 @Controller
 @RequestMapping("/fertilizers")
-public class ControllerExample {
+public class FertilizerController {
     private final FertilizerService fertilizerService;
 
-    public ControllerExample(FertilizerService fertilizerService) {
+    public FertilizerController(FertilizerService fertilizerService) {
         this.fertilizerService = fertilizerService;
     }
 
@@ -39,6 +40,12 @@ public class ControllerExample {
         model.addAttribute("names", set);
         model.addAttribute("fertilizer", fertilizer);
         return "fertilizerForm";
+    }
+
+    @GetMapping("/period")
+    public String getPagePeriodFertilizers(Model model) {
+        model.addAttribute("fertilizersMap", FertilizerServiceImpl.map);
+        return "fertilizerTime";
     }
 
     @PostMapping
