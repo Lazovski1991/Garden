@@ -32,13 +32,13 @@ public class User implements UserDetails {
     @Column(name = "enabled")
     private boolean enabled = true;
 
-    @Enumerated(EnumType.STRING)
+/*    @Enumerated(EnumType.STRING)
     @CollectionTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"),
             uniqueConstraints = {@UniqueConstraint(columnNames = {"user_id", "role"}, name = "user_roles_unique_idx")})
     @Column(name = "role")
     @ElementCollection(fetch = FetchType.EAGER)
     @BatchSize(size = 200)
-    private Set<Role> roles;
+    private Set<Role> roles;*/
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
     private List<Fertilizer> fertilizers;
@@ -128,13 +128,13 @@ public class User implements UserDetails {
         this.enabled = enabled;
     }
 
-    public Set<Role> getRoles() {
+/*    public Set<Role> getRoles() {
         return roles;
     }
 
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
-    }
+    }*/
 
     public List<Fertilizer> getFertilizers() {
         return fertilizers;

@@ -4,6 +4,7 @@ import my.company.entity.Fertilizer;
 import my.company.entity.User;
 import my.company.service.Fertilizer.FertilizerService;
 import my.company.service.Fertilizer.FertilizerServiceImpl;
+import my.company.service.SecurityUtil;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,13 +25,13 @@ public class FertilizerController {
 
     @GetMapping
     public String getPage(Model model) {
-        model.addAttribute("fertilizers", fertilizerService.findStatusFalse(1));
+        model.addAttribute("fertilizers", fertilizerService.findStatusFalse(SecurityUtil.authUserId()));
         return "fertilizers";
     }
 
     @GetMapping("/overs")
     public String getPageOver(Model model) {
-        model.addAttribute("fertilizers", fertilizerService.findStatusTrue(1));
+        model.addAttribute("fertilizers", fertilizerService.findStatusTrue(SecurityUtil.authUserId()));
         return "fertilizersOver";
     }
 
@@ -51,7 +52,7 @@ public class FertilizerController {
     @PostMapping
     public String save(@RequestParam(required = false) Integer id, @RequestParam String name, @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate localDate) {
         Fertilizer fertilizer = new Fertilizer(id, name, localDate, false);
-        fertilizerService.save(fertilizer, 1);
+        fertilizerService.save(fertilizer, SecurityUtil.authUserId());
         return "redirect:/fertilizers";
     }
 
@@ -72,7 +73,7 @@ public class FertilizerController {
 
     @GetMapping("/deleteAllTrue")
     public String deleteAllTrue() {
-        fertilizerService.removeTrueAll(1);
+        fertilizerService.removeTrueAll(SecurityUtil.authUserId());
         return "redirect:/fertilizers/overs";
     }
 

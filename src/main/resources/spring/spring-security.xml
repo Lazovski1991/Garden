@@ -11,10 +11,10 @@
 
     <http auto-config="true">
         <intercept-url pattern="/login" access="permitAll()"/>
-        <intercept-url pattern="/users/*" access="isAnonymous()"/>
+        <intercept-url pattern="/users/**" access="isAnonymous()"/>
         <intercept-url pattern="/resources/css/**" access="permitAll"/>
 
-        <intercept-url pattern="/fertilizers" access="isAuthenticated()"/>
+        <intercept-url pattern="/*" access="isAuthenticated()"/>
 
 
         <form-login
