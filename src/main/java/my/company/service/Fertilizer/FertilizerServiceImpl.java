@@ -91,7 +91,6 @@ public class FertilizerServiceImpl implements FertilizerService {
     @Override
     public void delete(Integer fertilizerId) {
         fertilizerRepository.deleteById(fertilizerId);
-        mailSend.sendMailMessage();
     }
 
     @Transactional
