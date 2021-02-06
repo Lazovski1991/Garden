@@ -16,19 +16,11 @@ import java.util.Map;
 @Service
 public class FertilizerServiceImpl implements FertilizerService {
 
-    public static Map<String, Integer> map() {
-        Map<String, Integer> map = new HashMap<>();
-        map.put("Фалькон", 30);
-        map.put("Солигор", 30);
-        map.put("Колосаль", 30);
-        map.put("Борей", 25);
-        map.put("Жёлтый", 7);
-        map.put("Миура", 60);
-        map.put("Агрон", 60);
-        map.put("Кеонит", 60);
-        map.put("Бицепс", 60);
-        return map;
-    }
+    Map<String, Integer> map = Map.of("Фалькон", 30, "Солигор", 30,
+            "Колосаль", 30, "Борей", 25,
+            "Жёлтый", 7, "Миура", 60,
+            "Агрон", 60, "Кеонит", 60,
+            "Бицепс", 60);
 
     @Autowired
     private MailSend mailSend;
@@ -105,7 +97,7 @@ public class FertilizerServiceImpl implements FertilizerService {
         oldFertilizer.setStatus(true);
         oldFertilizer.setLocalDate(now);
         Integer userId = oldFertilizer.getUser().getId();
-        for (Map.Entry<String, Integer> pair : map().entrySet()) {
+        for (Map.Entry<String, Integer> pair : map.entrySet()) {
             if (pair.getKey().equalsIgnoreCase(oldFertilizer.getName())) {
                 newFertilizer.setLocalDate(now.plusDays(pair.getValue()));
                 save(newFertilizer, userId);

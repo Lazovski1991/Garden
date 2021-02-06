@@ -37,7 +37,7 @@ public class FertilizerController {
 
     @GetMapping("/add")
     public String getPageAdd(Model model, Fertilizer fertilizer) {
-        Set<String> set = FertilizerServiceImpl.map().keySet();
+        Set<String> set = FertilizerServiceImpl.map.keySet();
         model.addAttribute("names", set);
         model.addAttribute("fertilizer", fertilizer);
         return "fertilizerForm";
@@ -45,7 +45,7 @@ public class FertilizerController {
 
     @GetMapping("/period")
     public String getPagePeriodFertilizers(Model model) {
-        model.addAttribute("fertilizersMap", FertilizerServiceImpl.map());
+        model.addAttribute("fertilizersMap", FertilizerServiceImpl.map);
         return "fertilizerTime";
     }
 
@@ -59,7 +59,7 @@ public class FertilizerController {
     @GetMapping("/update")
     public String update(Model model, @RequestParam("id") Integer fertilizerId) {
         Fertilizer fertilizer = fertilizerService.getId(fertilizerId);
-        Set<String> set = FertilizerServiceImpl.map().keySet();
+        Set<String> set = FertilizerServiceImpl.map.keySet();
         model.addAttribute("names", set);
         model.addAttribute(fertilizer);
         return "fertilizerForm";
