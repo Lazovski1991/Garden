@@ -25,6 +25,7 @@
     <webjars-bootstrap.version>4.5.3</webjars-bootstrap.version>
     <webjars-jquery.version>3.5.1</webjars-jquery.version>
     <webjars-datatables.version>1.10.21</webjars-datatables.version>
+    <tomcat.version>9.0.41</tomcat.version>
   </properties>
 
   <dependencies>
@@ -128,6 +129,14 @@
       <artifactId>javax.mail</artifactId>
       <version>1.5.4</version>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-dbcp -->
+    <dependency>
+      <groupId>org.apache.tomcat</groupId>
+      <artifactId>tomcat-jdbc</artifactId>
+      <version>${tomcat.version}</version>
+    </dependency>
+
   </dependencies>
 
   <build>
@@ -153,6 +162,26 @@
         </configuration>
       </plugin>
 
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals><goal>copy</goal></goals>
+            <configuration>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>com.heroku</groupId>
+                  <artifactId>webapp-runner</artifactId>
+                  <version>9.0.41.0</version>
+                  <destFileName>webapp-runner.jar</destFileName>
+                </artifactItem>
+              </artifactItems>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 
